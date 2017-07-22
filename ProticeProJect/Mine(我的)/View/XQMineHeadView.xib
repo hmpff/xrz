@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="tuX-9f-oIl" customClass="XQMineHeadView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backImageV" translatesAutoresizingMaskIntoConstraints="NO" id="App-1L-2XV"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D38-J4-4zW" customClass="XQIconView">
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="koV-XZ-z7D"/>
+                        <constraint firstAttribute="height" constant="100" id="r8Z-lD-COh"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="App-1L-2XV" firstAttribute="top" secondItem="tuX-9f-oIl" secondAttribute="top" id="KZF-lO-CmJ"/>
+                <constraint firstItem="D38-J4-4zW" firstAttribute="centerY" secondItem="tuX-9f-oIl" secondAttribute="centerY" id="e2B-pc-5NR"/>
+                <constraint firstAttribute="trailing" secondItem="App-1L-2XV" secondAttribute="trailing" id="gaQ-a7-RaR"/>
+                <constraint firstAttribute="bottom" secondItem="App-1L-2XV" secondAttribute="bottom" id="icc-HU-YVk"/>
+                <constraint firstItem="D38-J4-4zW" firstAttribute="centerX" secondItem="tuX-9f-oIl" secondAttribute="centerX" id="snE-Fn-tMU"/>
+                <constraint firstItem="App-1L-2XV" firstAttribute="leading" secondItem="tuX-9f-oIl" secondAttribute="leading" id="ub7-dK-q1q"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="imageV" destination="App-1L-2XV" id="LFy-EZ-rUx"/>
+            </connections>
+            <point key="canvasLocation" x="532" y="408"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="backImageV" width="580" height="387"/>
+    </resources>
+</document>
